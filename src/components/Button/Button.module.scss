@@ -1,0 +1,52 @@
+.hidden {
+    visibility: hidden;
+}
+
+.btn {
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: white;
+    background: rgb(249, 129, 0);
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+}
+
+.small {
+    padding: 4px 6px;
+    font-size: 12px;
+}
+.medium {
+    padding: 6px 8px;
+    font-size: 14px;
+}
+.large {
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.bordered {
+    border: 1px solid #3498db;
+}
+
+.rounded {
+    border-radius: 9999px;
+}
+
+.primary {
+    background: #3498db;
+    color: #fff;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

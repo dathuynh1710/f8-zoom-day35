@@ -1,0 +1,55 @@
+.card {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 30px 25px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #f9f9f9, #ffffff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05), 0 8px 20px rgba(0, 0, 0, 0.08), 0 12px 40px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.info {
+    text-align: center;
+
+    p {
+        margin: 8px 0;
+        font-size: 15px;
+        color: #444;
+
+        strong {
+            color: #2c3e50;
+        }
+    }
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 18px;
+    color: #888;
+    font-style: italic;
+}

@@ -1,0 +1,57 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; // khoảng cách giữa các item
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #1e293b, #0f172a); // gradient nền hiện đại
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    li {
+        list-style: none;
+
+        a {
+            position: relative;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #38bdf8; // xanh cyan khi hover
+            }
+
+            // underline effect khi hover
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -4px;
+                transform: translateX(-50%);
+                width: 0%;
+                height: 2px;
+                background: #38bdf8;
+                border-radius: 2px;
+                transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+                width: 80%;
+            }
+        }
+    }
+}
+
+// class active từ NavLink
+.active {
+    color: #38bdf8 !important;
+    font-weight: 600;
+
+    &::after {
+        width: 80% !important;
+    }
+}
